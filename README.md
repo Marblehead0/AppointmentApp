@@ -87,9 +87,9 @@ Run tests with:
 ---
 
 ##  🚀 How to Run
-- git clone https://github.com/<your-username>/EPDConsole.git
-- cd EPDConsole
-- dotnet run --project Chipsoft.Assignments.EPDConsole
+- git clone https://github.com/Marblehead0/AppointmentApp.git
+- cd AppointmentApp
+- dotnet run --project AppointmentApp/EPDConsole.csproj
 
 To reset database:
 Choose option 8 from the main menu.
