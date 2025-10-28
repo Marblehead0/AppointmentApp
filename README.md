@@ -17,9 +17,9 @@ It is built using **Entity Framework Core (SQLite)** and demonstrates clean arch
 ✅ Add, list, and delete patients and physicians  
 ✅ Create and view appointments  
 ✅ Validation for:
-    - Email format
-    - National Register number (11 digits)
-    - Appointment date not in the past  
+- Email format
+- National Register number (11 digits)
+- Appointment date not in the past  
 ✅ Console interface with menu navigation and cancel option  
 ✅ Unit tests (NUnit + EFCore InMemory)
 
