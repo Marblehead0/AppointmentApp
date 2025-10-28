@@ -70,13 +70,6 @@ Run tests with:
 | `/Tests`    | Unit tests for business logic                 |
 | `/docs`     | Design explanation and use case documentation |
 
-
-🧾 Documentation
-
-See /docs/DesignChoices.pdf and /docs/UseCases.pdf for:
-    - Architecture & design motivation
-    - Full use case descriptions
-
 🚀 How to Run
 git clone https://github.com/<your-username>/EPDConsole.git
 cd EPDConsole
