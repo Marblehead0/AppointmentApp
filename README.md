@@ -98,7 +98,14 @@ Choose option 8 from the main menu.
 
 ##  🏷️ Tags
 
-C# EntityFramework SQLite .NET ConsoleApp CleanArchitecture NUnit SOLID
+- C#
+- EntityFramework
+- SQLite
+- .NET
+- ConsoleApp
+- CleanArchitecture
+- NUnit
+- SOLID
 
 ---
 
