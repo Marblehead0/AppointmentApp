@@ -64,15 +64,19 @@ public void AddAppointment_ShouldThrow_WhenInPast()
 ```
 
 Run tests with:
-    dotnet test
+- dotnet test
 
-🧰 Technologies
+---
+
+## 🧰 Technologies
 - .NET 8.0        
 - Entity Framework Core
 - SQLite / InMemory
 - NUnit
 
-📂 Folder Overview
+---
+
+##  📂 Folder Overview
 
 | Folder      | Description                                   |
 | ----------- | --------------------------------------------- |
@@ -80,7 +84,9 @@ Run tests with:
 | `/Services` | Logic for managing entities                   |
 | `/Tests`    | Unit tests for business logic                 |
 
-🚀 How to Run
+---
+
+##  🚀 How to Run
 git clone https://github.com/<your-username>/EPDConsole.git
 cd EPDConsole
 dotnet run --project Chipsoft.Assignments.EPDConsole
@@ -88,7 +94,9 @@ dotnet run --project Chipsoft.Assignments.EPDConsole
 To reset database:
 Choose option 8 from the main menu.
 
-🏷️ Tags
+---
+
+##  🏷️ Tags
 
 C# EntityFramework SQLite .NET ConsoleApp CleanArchitecture NUnit SOLID
 
