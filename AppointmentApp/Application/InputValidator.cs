@@ -87,7 +87,7 @@ namespace EPDConsole.Application
         {
             while (true)
             {
-                Console.Write($"{label}: ");
+                Console.Write($"{label} ");
                 var input = Console.ReadLine();
                 if (!string.IsNullOrWhiteSpace(input) && System.Text.RegularExpressions.Regex.IsMatch(input, @"^\d{11}$"))
                 {

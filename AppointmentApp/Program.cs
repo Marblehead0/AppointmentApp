@@ -1,8 +1,6 @@
 ﻿using Chipsoft.Assignments.EPDConsole.Application;
 using Chipsoft.Assignments.EPDConsole.Data;
 using EPDConsole.Application;
-using System.Globalization;
-using System.Reflection.Emit;
 
 namespace Chipsoft.Assignments.EPDConsole
 {
@@ -18,6 +16,7 @@ namespace Chipsoft.Assignments.EPDConsole
 
             while (ShowMenu()) { }
         }
+        
 
         public static bool ShowMenu()
         {
@@ -343,7 +342,7 @@ namespace Chipsoft.Assignments.EPDConsole
             } 
             foreach (var a in list)
             {
-                Console.WriteLine($"#{a.Id} {a.StartsAt:dd-MM-yyyy HH:mm} - {a.EndsAt:HH:mm} | PatientId {a.PatientId} | {a.Notes}");
+                Console.WriteLine($"#{a.Id} Van {a.StartsAt:dd-MM-yyyy HH:mm} - tot {a.EndsAt:HH:mm} | Patient: {a.Patient} | Notities: {a.Notes}");
             }
 
             Pause();
@@ -367,7 +366,7 @@ namespace Chipsoft.Assignments.EPDConsole
             {
                 var patient = a.Patient != null ? $"{a.Patient.FirstName} {a.Patient.LastName}" : $"PatientId {a.PatientId}";
                 var physician = a.Physician != null ? a.Physician.FullName : $"PhysicianId {a.PhysicianId}";
-                Console.WriteLine($"#{a.Id} {a.StartsAt:dd-MM-yyyy HH:mm} - {a.EndsAt:HH:mm} | {patient} -- {physician} | {a.Notes}");
+                Console.WriteLine($"#{a.Id} Van {a.StartsAt:dd-MM-yyyy HH:mm} tot {a.EndsAt:HH:mm} | Patient: {patient} -- Dokter: {physician} | Notities: {a.Notes}");
             }
 
             Pause();

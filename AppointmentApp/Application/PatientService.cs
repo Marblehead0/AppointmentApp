@@ -58,7 +58,7 @@ namespace Chipsoft.Assignments.EPDConsole.Application
         }
 
         public Task<List<Patient>> GetAllAsync()
-            => _db.Patients.OrderBy(p => p.LastName).ThenBy(p => p.FirstName).ToListAsync();
+            => _db.Patients.OrderBy(p => p.Id).ToListAsync();
 
 
     }
