@@ -5,9 +5,9 @@
 
 ## 📖 Project Description
 This is a console-based application that allows a small medical practice to manage:
-    - Patients  
-    - Physicians  
-    - Appointments  
+- Patients  
+- Physicians  
+- Appointments  
 
 It is built using **Entity Framework Core (SQLite)** and demonstrates clean architecture, validation, and adherence to **SOLID principles**.
 
