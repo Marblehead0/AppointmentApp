@@ -31,11 +31,11 @@ It is built using **Entity Framework Core (SQLite)** and demonstrates clean arch
 
 ## 🧱 Architecture
 The application follows a layered architecture:
-[ Console UI ]
-↓
-[ Services Layer ] - Business logic and validation
-↓
-[ Data Layer ] - EF Core context and entity models
+[ Console UI ] → [ Services Layer ] → [ Data Layer ]
+
+ -  Service layers: Business logic and validation
+
+ - Data layer: EF Core context and entity models
 
 
 Each layer respects **Single Responsibility** and **Dependency Inversion**.
