@@ -29,6 +29,13 @@ It is built using **Entity Framework Core (SQLite)** and demonstrates clean arch
 
 ---
 
+## 🧩 Features for the future
+- Option to exit current function
+- Delete appointment
+- Extend current show appointment function to also work for individual patients
+- Add more input validations eg. A check for illegal characters in first and last name
+- Immediate check for appointment dates in the past ( Now currently at the end step of the create appointment )
+
 ## 🧱 Architecture
 The application follows a layered architecture:
 [ Console UI ] → [ Services Layer ] → [ Data Layer ]
