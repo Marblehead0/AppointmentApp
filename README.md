@@ -15,9 +15,13 @@ It is built using **Entity Framework Core (SQLite)** and demonstrates clean arch
 
 ## 🧩 Features
 ✅ Add, list, and delete patients and physicians  
+
 ✅ Create and view appointments  
-✅ Console interface with menu navigation and cancel option  
+
+✅ Console interface with menu navigation and cancel option
+
 ✅ Unit tests (NUnit + EFCore InMemory)
+
 ✅ Validation for:
 - Email format
 - National Register number (11 digits)
@@ -39,7 +43,7 @@ Each layer respects **Single Responsibility** and **Dependency Inversion**.
 ---
 
 ## 🧪 Unit Testing
-    Tests are written using **NUnit** and the **EFCore InMemory** provider.
+Tests are written using **NUnit** and the **EFCore InMemory** provider.
 
 Example test:
 ```csharp
@@ -68,7 +72,6 @@ Run tests with:
 | `/Models`   | Entities: Patient, Physician, Appointment     |
 | `/Services` | Logic for managing entities                   |
 | `/Tests`    | Unit tests for business logic                 |
-| `/docs`     | Design explanation and use case documentation |
 
 🚀 How to Run
 git clone https://github.com/<your-username>/EPDConsole.git
@@ -84,7 +87,7 @@ C# EntityFramework SQLite .NET ConsoleApp CleanArchitecture NUnit SOLID
 
 ---
 
-## 🧩 Commit Suggesties
+## 🧩 Commit Suggestions
 
 Use clear commits like:
 ```bash
