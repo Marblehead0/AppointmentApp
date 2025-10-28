@@ -60,10 +60,10 @@ Run tests with:
     dotnet test
 
 🧰 Technologies
-    .NET 8.0        
-    Entity Framework Core
-    SQLite / InMemory
-    NUnit
+- .NET 8.0        
+- Entity Framework Core
+- SQLite / InMemory
+- NUnit
 
 📂 Folder Overview
 
