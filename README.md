@@ -5,9 +5,9 @@
 
 ## 📖 Project Description
 This is a console-based application that allows a small medical practice to manage:
-- Patients  
-- Physicians  
-- Appointments  
+    - Patients  
+    - Physicians  
+    - Appointments  
 
 It is built using **Entity Framework Core (SQLite)** and demonstrates clean architecture, validation, and adherence to **SOLID principles**.
 
@@ -17,9 +17,9 @@ It is built using **Entity Framework Core (SQLite)** and demonstrates clean arch
 ✅ Add, list, and delete patients and physicians  
 ✅ Create and view appointments  
 ✅ Validation for:
-- Email format
-- National Register number (11 digits)
-- Appointment date not in the past  
+    - Email format
+    - National Register number (11 digits)
+    - Appointment date not in the past  
 ✅ Console interface with menu navigation and cancel option  
 ✅ Unit tests (NUnit + EFCore InMemory)
 
@@ -39,7 +39,7 @@ Each layer respects **Single Responsibility** and **Dependency Inversion**.
 ---
 
 ## 🧪 Unit Testing
-Tests are written using **NUnit** and the **EFCore InMemory** provider.
+    Tests are written using **NUnit** and the **EFCore InMemory** provider.
 
 Example test:
 ```csharp
@@ -53,18 +53,13 @@ public void AddAppointment_ShouldThrow_WhenInPast()
 ```
 
 Run tests with:
-
-dotnet test
+    dotnet test
 
 🧰 Technologies
-
-.NET 8.0
-
-Entity Framework Core
-
-SQLite / InMemory
-
-NUnit
+    .NET 8.0        
+    Entity Framework Core
+    SQLite / InMemory
+    NUnit
 
 📂 Folder Overview
 
@@ -79,9 +74,8 @@ NUnit
 🧾 Documentation
 
 See /docs/DesignChoices.pdf and /docs/UseCases.pdf for:
-
-- Architecture & design motivation
-- Full use case descriptions
+    - Architecture & design motivation
+    - Full use case descriptions
 
 🚀 How to Run
 git clone https://github.com/<your-username>/EPDConsole.git
@@ -99,9 +93,10 @@ C# EntityFramework SQLite .NET ConsoleApp CleanArchitecture NUnit SOLID
 
 ## 🧩 Commit Suggesties
 
-Gebruik duidelijke commits zoals:
+Use clear commits like:
 ```bash
 git commit -m "Add PatientService with validation and unit tests"
 git commit -m "Implement AppointmentService with past-date validation"
 git commit -m "Add UseCases.pdf and DesignChoices.pdf documentation"
 git commit -m "Improve console input handling with cancel option"
+```
