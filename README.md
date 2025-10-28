@@ -15,23 +15,34 @@ It is built using **Entity Framework Core (SQLite)** and demonstrates clean arch
 
 ## 🧩 Features
 ✅ Add, list, and delete patients and physicians  
+
 ✅ Create and view appointments  
+
+✅ Console interface with menu navigation and cancel option
+
+✅ Unit tests (NUnit + EFCore InMemory)
+
 ✅ Validation for:
 - Email format
 - National Register number (11 digits)
 - Appointment date not in the past  
-✅ Console interface with menu navigation and cancel option  
-✅ Unit tests (NUnit + EFCore InMemory)
 
 ---
 
+## 🧩 Features for the future
+- Option to exit current function
+- Delete appointment
+- Extend current show appointment function to also work for individual patients
+- Add more input validations eg. A check for illegal characters in first and last name
+- Immediate check for appointment dates in the past ( Now currently at the end step of the create appointment )
+
 ## 🧱 Architecture
 The application follows a layered architecture:
-[ Console UI ]
-↓
-[ Services Layer ] - Business logic and validation
-↓
-[ Data Layer ] - EF Core context and entity models
+[ Console UI ] → [ Services Layer ] → [ Data Layer ]
+
+ -  Service layers: Business logic and validation
+
+ - Data layer: EF Core context and entity models
 
 
 Each layer respects **Single Responsibility** and **Dependency Inversion**.
@@ -53,55 +64,57 @@ public void AddAppointment_ShouldThrow_WhenInPast()
 ```
 
 Run tests with:
+- dotnet test
 
-dotnet test
+---
 
-🧰 Technologies
+## 🧰 Technologies
+- .NET 8.0        
+- Entity Framework Core
+- SQLite / InMemory
+- NUnit
 
-.NET 8.0
+---
 
-Entity Framework Core
-
-SQLite / InMemory
-
-NUnit
-
-📂 Folder Overview
+##  📂 Folder Overview
 
 | Folder      | Description                                   |
 | ----------- | --------------------------------------------- |
 | `/Models`   | Entities: Patient, Physician, Appointment     |
 | `/Services` | Logic for managing entities                   |
 | `/Tests`    | Unit tests for business logic                 |
-| `/docs`     | Design explanation and use case documentation |
 
+---
 
-🧾 Documentation
-
-See /docs/DesignChoices.pdf and /docs/UseCases.pdf for:
-
-- Architecture & design motivation
-- Full use case descriptions
-
-🚀 How to Run
-git clone https://github.com/<your-username>/EPDConsole.git
-cd EPDConsole
-dotnet run --project Chipsoft.Assignments.EPDConsole
+##  🚀 How to Run
+- git clone https://github.com/Marblehead0/AppointmentApp.git
+- cd AppointmentApp
+- dotnet run --project AppointmentApp/EPDConsole.csproj
 
 To reset database:
 Choose option 8 from the main menu.
 
-🏷️ Tags
+---
 
-C# EntityFramework SQLite .NET ConsoleApp CleanArchitecture NUnit SOLID
+##  🏷️ Tags
+
+- C#
+- EntityFramework
+- SQLite
+- .NET
+- ConsoleApp
+- CleanArchitecture
+- NUnit
+- SOLID
 
 ---
 
-## 🧩 Commit Suggesties
+## 🧩 Commit Suggestions
 
-Gebruik duidelijke commits zoals:
+Use clear commits like:
 ```bash
 git commit -m "Add PatientService with validation and unit tests"
 git commit -m "Implement AppointmentService with past-date validation"
 git commit -m "Add UseCases.pdf and DesignChoices.pdf documentation"
 git commit -m "Improve console input handling with cancel option"
+```
